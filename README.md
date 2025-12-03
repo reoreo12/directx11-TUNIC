@@ -20,3 +20,29 @@ C++ DirectX 11 기반 3D 액션 어드벤처 게임 'TUNIC' 모작
         <img src="https://img.shields.io/badge/YouTube-red?logo=youtube&logoColor=white&style=for-the-badge" alt="YouTube 플레이 영상">
     </a>
 </p>
+
+## 대표 클래스 위치
+아래 토글에서 각 클래스의 **프로젝트 내 위치/역할/조각 코드/설명** 등을 볼 수 있습니다.
+
+<details>
+<summary><code>CCollider/CCollision_Manager</code></summary>
+
+- **역할**
+    - CCollider: AABB/OBB/Sphere 등 충돌체를 표현하는 컴포넌트
+    - CCollision_Manager: 객체 간 충돌을 검사하고 충돌 이벤트를 호출하는 매니저 클래스
+
+- **실제 프로젝트 경로**
+    - Engine/Public/Collider.h
+    - Engine/Private/Collider.cpp
+
+    - Engine/Public/Collision_Manager.h
+    - Engine/Private/Collision_Manager.cpp
+
+- **소스 바로가기**
+    - [Collider.h](Collision/Collider/Collider.h)
+    - [Collider.cpp](Collision/Collider/Collider.cpp)
+
+    - [Collision.h](Collision/Collision_Manager/Collision_Manager.h)
+    - [Collision.cpp](Collision/Collision_Manager/Collision_Manager.cpp)
+
+</details>
