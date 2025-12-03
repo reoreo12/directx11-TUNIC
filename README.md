@@ -16,7 +16,7 @@ C++ DirectX 11 기반 3D 액션 어드벤처 게임 'TUNIC' 모작
 </p>
 
 <p align="center">
-    <a href="https://youtu.be/qjgvwJ-0qsk?si=_1e4KpgLCA59vz43">
+    <a href="https://youtu.be/qXo6ew3sXlM">
         <img src="https://img.shields.io/badge/YouTube-red?logo=youtube&logoColor=white&style=for-the-badge" alt="YouTube 플레이 영상">
     </a>
 </p>
