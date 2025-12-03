@@ -102,6 +102,8 @@ vUp = XMVector3Normalize(XMVector3Cross(vClimbDir, vRight));
 
 </details>
 
+</details>
+
 <details>
 <summary><code>Inventory</code></summary>
 
