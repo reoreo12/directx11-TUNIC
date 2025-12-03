@@ -70,18 +70,19 @@ _bool bFoundTop = false;
 _bool bFoundBottom = false;
 ```
 <p align="center">
-    <img src="Images/Climb_1.jpg" width="60%" alt="사다리 아래에서 타는 경우">
+    <img src="Images/Climb_1.png" width="80%" alt="사다리 아래에서 타는 경우">
 </p>
 <p align="center">플레이어가 아래에서 사다리를 타는 경우</p>
 <p align="center">
-    <img src="Images/Climb_2.jpg" width="60%" alt="사다리 위에서 타는 경우">
+    <img src="Images/Climb_2.png" width="80%" alt="사다리 위에서 타는 경우">
 </p>
 <p align="center">플레이어가 위에서 사다리를 타는 경우</p>
 
+
 <p align="center">
-    <img src="Images/Climb_3.jpg" width="60%" alt="사다리 위에서 타는 경우의 플레이어">
+    <img src="Images/Climb_3.png" width="80%" alt="사다리 위에서 타는 경우의 플레이어">
 </p>
-<p align="center">플레이어가 위에서 타는 경우 몸을 돌리기</p>
+<p align="center">플레이어가 위에서 타는 경우 몸을 돌려야 함</p>
 
 ```cpp
 // 사다리의 노말 벡터를 반전시켜 플레이어가 바라볼 방향을 정한다
@@ -95,9 +96,78 @@ _vector vRight = XMVector3Normalize(XMVector3Cross(vUp, vClimbDir));
 vUp = XMVector3Normalize(XMVector3Cross(vClimbDir, vRight));
 ```
 <p align="center">
-    <img src="Images/Climb_3.jpg" width="60%" alt="사다리 위에서 타는 경우의 플레이어">
+    <img src="Images/Climb_4.png" width="80%" alt="사다리의 법선 벡터와 플레이어의 룩 벡터">
 </p>
 <p align="center">플레이어의 Look 벡터와 사다리의 법선 벡터가 반대</p>
+
+</details>
+
+<details>
+<summary><code>Inventory</code></summary>
+
+- **역할**
+    - CInventory: 실제 아이템 데이터를 관리하는 컴포넌트 클래스
+    - CItem: 아이템 타입/수량 등을 갖는 베이스 클래스
+
+- **실제 프로젝트 경로**
+    - Engine/Public/Inventory.h
+    - Engine/Private/Inventory.cpp
+
+    - Engine/Public/Item.h
+    - Engine/Private/Item.cpp
+
+- **소스 바로가기**
+    - [Inventory.h](Inventory/Inventory/Collider.h)
+    - [Inventory.cpp](Inventory/Inventory/Collider.cpp)
+
+    - [Item.h](Inventory/Item/Item.h)
+    - [Item.cpp](Inventory/Item/Item.cpp)
+
+</details>
+
+<details>
+<summary><code>NavigationTool</code></summary>
+
+- **역할**
+    - CNavigationTool: 캐릭터의 이동을 제한하는 셀 내비게이션 제작 툴
+
+- **실제 프로젝트 경로**
+    - Tool/Public/NavigationTool.h
+    - Tool/Private/NavigationTool.cpp
+
+- **소스 바로가기**
+    - [NavigationTool.h](NavigationTool/NavigationTool.h)
+    - [NavigationTool.cpp](NavigationTool/NavigationTool.cpp)
+
+</details>
+
+<details>
+<summary><code>Observer Pattern</code></summary>
+
+- **역할**
+    - Isubject: 옵저버 관리 및 태그를 통한 이벤트 콜백 함수 호출을 담당하는 클래스
+    - IObserver: 콜백 인터페이스
+    - CInvenUI_Background: IObserver를 상속하는 옵저버 예시 클래스
+
+- **실제 프로젝트 경로**
+    - Client/Public/Isubject.h
+    - Client/Private/Isubject.cpp
+
+    - Client/Public/IObserver.h
+    - Client/Private/IObserver.cpp
+
+    - Client/Public/InvenUI_Background.h
+    - Client/Private/InvenUI_Background.cpp
+
+- **소스 바로가기**
+    - [Isubject.h](Observer/Isubject/Isubject.h)
+    - [Isubject.cpp](Observer/Isubject/Isubject.cpp)
+
+    - [IObserver.h](Observer/IObserver/IObserver.h)
+    - [IObserver.cpp](Observer/IObserver/IObserver.cpp)
+
+    - [InvenUI_Background.h](Observer/InvenUI_Background/InvenUI_Background.h)
+    - [InvenUI_Background.cpp](Observer/InvenUI_Background/InvenUI_Background.cpp)
 
 </details>
 
